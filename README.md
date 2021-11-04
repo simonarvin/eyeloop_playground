@@ -36,40 +36,40 @@ To achieve good eye-tracking performance, EyeLoop's binarization parameters shou
 
 When the binary threshold is turned down, dark pixels dominate, which can make the pupil less likely to stand out:
 
-<p align="center">
-<img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/Guide/low_binary.png" width = 300>
+<p align="right">
+<img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/Guide/low_binary.png" width = 200>
 </p>
 
 When the binary threshold is too high, light pixels dominate:
 
-<p align="center">
-<img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/Guide/high_binary.png" width = 300>
+<p align="right">
+<img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/Guide/high_binary.png" width = 200>
 </p>
 
-The binary threshold should be set somewhere in-between to maximize the pupil contour:
+The binary threshold should be set somewhere in-between to optimize the pupil contour:
 
-<p align="center">
-<img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/Guide/ideal.png" width = 300>
+<p align="right">
+<img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/Guide/ideal.png" width = 200>
 </p>
 
 **Gaussian smoothing**
 
 When the Gaussian power is too low, the pupil appears grainy. This can introduce noise, making eye-tracking less ideal:
 
-<p align="center">
-<img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/Guide/low_gaussian.png" width = 300>
+<p align="right">
+<img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/Guide/low_gaussian.png" width = 200>
 </p>
 
 When the Gaussian power is too high, the pupil might blend into adjacent tissue, making it less discernible:
 
-<p align="center">
-<img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/Guide/high_gaussian.png" width = 300>
+<p align="right">
+<img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/Guide/high_gaussian.png" width = 200>
 </p>
 
 The Gaussian power should be set to maximize discernibility, while minimizing noise:
 
-<p align="center">
-<img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/Guide/ideal.png" width = 300>
+<p align="right">
+<img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/Guide/ideal.png" width = 200>
 </p>
 
 When the parameter set has been optimized, EyeLoop will automatically save it for subsequent use. See below on how to load the parameter file.
