@@ -4,7 +4,7 @@
 <img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/logo.svg?raw=true">
 </p>
 
-*EyeLoop Playground* is a supplementary test space for [*EyeLoop*](https://github.com/simonarvin/eyeloop), a Python 3-based eye-tracker tailored specifically to dynamic, closed-loop experiments on consumer-grade hardware.
+*EyeLoop Playground* is a supplementary test space for [*EyeLoop*](https://github.com/simonarvin/eyeloop), a Python 3-based eye-tracker tailored specifically to dynamic, closed-loop experiments on consumer-grade hardware. *EyeLoop Playground* contains test footage and data to get started.
 
 ## Overview ##
 - [Contents](#contents)
