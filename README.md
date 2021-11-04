@@ -12,7 +12,8 @@
 - [Contribute](#contribute)
 
 ## Contents ##
-- [x] Sample data
+- [x] Sample footage (videos)
+- [x] Sample data (json)
 - [x] Blink calibration files.
 - [x] Binarization parameter files.
 
