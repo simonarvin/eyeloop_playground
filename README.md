@@ -21,6 +21,33 @@
 
 ## How to ##
 
+### Adjust binarization parameters ###
+To achieve good eye-tracking performance, EyeLoop's binarization parameters should be optimized to your video material. Users can adjust two parameters, namely:
+
+- Binary threshold
+
+> Pupil: <kbd>R</kbd>/<kbd>F</kbd> – Corneal reflection: <kbd>W</kbd>/<kbd>S</kbd>
+
+- Gaussian power
+
+> Pupil: <kbd>T</kbd>/<kbd>G</kbd> – Corneal reflection: <kbd>E</kbd>/<kbd>D</kbd>
+
+**Binary thresholding**
+When the binary threshold is turned down, dark pixels dominate, which can make the pupil less likely to stand out:
+
+When the binary threshold is too high, light pixels dominate:
+
+The binary threshold should be set somewhere in-between to maximize the pupil contour:
+
+**Gaussian smoothing**
+When the Gaussian power is too low, the pupil appears grainy. This can introduce noise, making eye-tracking less ideal:
+
+When the Gaussian power is too high, the pupil might blend into adjacent tissue, making it less discernible:
+
+The Gaussian power should be set to maximize discernibility, while minimizing noise:
+
+
+
 ### Load blink calibration file ###
 To load a blink calibration file, pass it to EyeLoop via command line argument ```--blink```, specifically:
 ```
