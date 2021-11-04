@@ -33,31 +33,59 @@ To achieve good eye-tracking performance, EyeLoop's binarization parameters shou
 > Pupil: <kbd>T</kbd>/<kbd>G</kbd> – Corneal reflection: <kbd>E</kbd>/<kbd>D</kbd>
 
 **Binary thresholding**
+
 When the binary threshold is turned down, dark pixels dominate, which can make the pupil less likely to stand out:
+
+<p align="center">
+<img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/Guide/low_binary.png" width = 300>
+</p>
 
 When the binary threshold is too high, light pixels dominate:
 
+<p align="center">
+<img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/Guide/high_binary.png" width = 300>
+</p>
+
 The binary threshold should be set somewhere in-between to maximize the pupil contour:
 
+<p align="center">
+<img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/Guide/ideal.png" width = 300>
+</p>
+
 **Gaussian smoothing**
+
 When the Gaussian power is too low, the pupil appears grainy. This can introduce noise, making eye-tracking less ideal:
+
+<p align="center">
+<img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/Guide/low_gaussian.png" width = 300>
+</p>
 
 When the Gaussian power is too high, the pupil might blend into adjacent tissue, making it less discernible:
 
+<p align="center">
+<img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/Guide/high_gaussian.png" width = 300>
+</p>
+
 The Gaussian power should be set to maximize discernibility, while minimizing noise:
 
+<p align="center">
+<img src="https://github.com/simonarvin/eyeloop_playground/blob/master/misc/Guide/ideal.png" width = 300>
+</p>
 
-
-### Load blink calibration file ###
-To load a blink calibration file, pass it to EyeLoop via command line argument ```--blink```, specifically:
-```
-eyeloop --blink [path-to-calibration-file]
-```
+When the parameter set has been optimized, EyeLoop will automatically save it for subsequent use. See below on how to load the parameter file.
 
 ### Load parameter file ###
 To load a parameter file, pass it to EyeLoop via command line argument ```--params```, specifically:
 ```
 eyeloop --params [path-to-parameter-file]
+```
+
+### Load blink calibration file ###
+On the first run, EyeLoop will automatically calibrate its blink detection to your video footage. This generates a calibration file that can be loaded for subsequent trials. 
+
+To load a blink calibration file, pass it to EyeLoop via command line argument ```--blink```, specifically:
+```
+eyeloop --blink [path-to-calibration-file]
 ```
 
 ## Contribute ##
